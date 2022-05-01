@@ -9,3 +9,10 @@
 .background-color {
     background: linear-gradient(#1c0603, #03071d, #190219);
 }
+
+@media only screen and (max-width: 800px) {
+    .header-title-style {
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+}

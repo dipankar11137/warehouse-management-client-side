@@ -1,11 +1,12 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
+import Products from '../Products/Products';
 import './Home.css'
 
 const Home = () => {
     return (
         <div >
-            <div className="container mt-3">
+            <div className="container mt-5">
                 <div className="row">
                     <div className="col-lg-4 col-12 text-center   ">
                         <h1 className='fw-bold header-title-style '>WELCOME TO MY WAREHOUSE</h1>
@@ -15,6 +16,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Products></Products>
         </div>
     );
 };

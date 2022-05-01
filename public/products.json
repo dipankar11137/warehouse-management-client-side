@@ -1,0 +1,65 @@
+[
+    {
+        "_id": 1,
+        "name": "Laptop",
+        "price": "53000",
+        "quantity": "4",
+        "supplierName": "Dipu",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+    },
+    {
+        "_id": 2,
+        "name": "Mobile",
+        "price": "23000",
+        "quantity": "3",
+        "supplierName": "Messi",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+    },
+    {
+        "_id": 3,
+        "name": "TV",
+        "price": "35000",
+        "quantity": "1",
+        "supplierName": "Ronaldo",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+    },
+    {
+        "_id": 4,
+        "name": "Laptop",
+        "price": "53000",
+        "quantity": "2",
+        "supplierName": "Naymer",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+    },
+    {
+        "_id": 5,
+        "name": "Freeze",
+        "price": "28000",
+        "quantity": "6",
+        "supplierName": "Ramus",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+    },
+    {
+        "_id": 6,
+        "name": "Radio",
+        "price": "53000",
+        "quantity": "22",
+        "supplierName": "Play",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+    },
+    {
+        "_id": 7,
+        "name": "Earphone",
+        "price": "3000",
+        "quantity": "7",
+        "supplierName": "Romero",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+    }
+]
