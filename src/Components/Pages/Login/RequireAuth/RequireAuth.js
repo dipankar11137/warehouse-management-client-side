@@ -1,9 +1,11 @@
 import React from 'react';
 import { useAuthState, useSendEmailVerification } from 'react-firebase-hooks/auth';
 import { Navigate, useLocation } from 'react-router-dom';
+import auth from '../../../../firebase.init';
 import { toast, ToastContainer } from 'react-toastify';
-import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
+
+
 
 const RequireAuth = ({ children }) => {
     const [user, loading] = useAuthState(auth);
@@ -25,7 +27,7 @@ const RequireAuth = ({ children }) => {
                 className='btn btn-primary'
                 onClick={async () => {
                     await sendEmailVerification();
-                    toast('Sent email');
+                    toast('Sent Verification email');
                 }}
             >
                 Send Verification Email Again
