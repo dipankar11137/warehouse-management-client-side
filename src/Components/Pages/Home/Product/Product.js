@@ -14,7 +14,7 @@ const Product = ({ product }) => {
                     <h6>Price : {price}</h6>
                     <h6>Supplier Name : {supplierName}</h6>
                 </div>
-                <button className='w-100 rounded-3 p-1 fw-bold fs-5 btn btn-warning '>Update Hare</button>
+                <button className='w-100 rounded-3 p-1 fw-bold fs-5 btn btn-warning btn-hover-style'>Update Hare</button>
             </div>
 
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
+import MaltiCursore from '../MaltiCursore/MaltiCursore';
 import Products from '../Products/Products';
 import './Home.css'
 
@@ -17,6 +18,7 @@ const Home = () => {
                 </div>
             </div>
             <Products></Products>
+            <MaltiCursore></MaltiCursore>
         </div>
     );
 };
