@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../Shared/Footer/Footer';
 import Banner from '../Banner/Banner';
 import MaltiCursore from '../MaltiCursore/MaltiCursore';
 import Products from '../Products/Products';
@@ -19,6 +20,7 @@ const Home = () => {
             </div>
             <Products></Products>
             <MaltiCursore></MaltiCursore>
+            <Footer></Footer>
         </div>
     );
 };

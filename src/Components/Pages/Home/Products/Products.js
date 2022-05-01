@@ -18,7 +18,9 @@ const Products = () => {
                 }
             </div>
 
-            <Nav.Link className='text-end mt-2' as={Link} to='/showallproducts'><button className='btn btn-warning fw-bold btn-hover-style fs-4'>Show All Products <img style={{ height: '25px' }} src={arrow} alt="" /></button></Nav.Link>
+            <Nav.Link className='text-end mt-2' as={Link} to='/showallproducts'>
+                <button className='btn btn-warning  fw-bold btn-hover-style fs-4'>Show All Products <img style={{ height: '25px' }} src={arrow} alt="" />
+                </button></Nav.Link>
         </div>
     );
 };
