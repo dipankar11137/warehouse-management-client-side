@@ -1,17 +1,44 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useLocation, useNavigate } from 'react-router-dom';
+import auth from '../../../../firebase.init';
 import Footer from '../../Shared/Footer/Footer';
 
 const Login = () => {
-    const emailRef = useRef('');
-    const passwordRef = useRef('');
+    // const emailRef = useRef('');
+    // const passwordRef = useRef('');
     const navigator = useNavigate();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
+
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useSignInWithEmailAndPassword(auth);
+
+    const handleEmailBlur = event => {
+        setEmail(event.target.value);
+    }
+
+    const handlePasswordBlur = event => {
+        setPassword(event.target.value);
+    }
 
     const navigateSignUp = () => {
         navigator('/signup');
     }
-    const handleSubmit = () => {
+
+    if (user) {
+        navigator(from, { replace: true });
+    }
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        signInWithEmailAndPassword(email, password);
 
     }
 
@@ -24,11 +51,11 @@ const Login = () => {
                 <div className='container border p-3'>
                     <Form onSubmit={handleSubmit}>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
+                            <Form.Control onBlur={handleEmailBlur} type="email" placeholder="Enter email" required />
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
+                            <Form.Control onBlur={handlePasswordBlur} type="password" placeholder="Password" required />
                         </Form.Group>
 
                         <Button variant="primary w-50 d-block mx-auto mb-2" type="submit">
