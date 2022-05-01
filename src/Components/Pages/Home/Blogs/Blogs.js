@@ -3,11 +3,11 @@ import { Table } from 'react-bootstrap';
 
 const Blogs = () => {
     return (
-        <div className='container mt-3'>
+        <div className='container mt-3  bg-white'>
             <h1 className='text-center fw-bold'>THIS IS BLOGS</h1>
-            <div className='shadow-lg p-1 text-center'>
-                <h3 className='text-start ms-3 p-3'>1 . Difference between javascript and nodejs .</h3>
-                <Table striped bordered hover>
+            <div className='shadow-lg p-1 text-center '>
+                <h3 className='text-start p-3'>1 . Difference between javascript and nodejs .</h3>
+                <Table bordered hover>
                     <thead>
                         <tr>
                             <th>S.No</th>
@@ -60,13 +60,13 @@ const Blogs = () => {
                 </Table>
             </div>
             <div className='shadow-lg mt-5 p-2'>
-                <h3 className='ms-3'>2. When should you use nodejs and when should you use mongodb ?</h3>
+                <h3 className='p-3'>2. When should you use nodejs and when should you use mongodb ?</h3>
                 <p><span className='fw-bold fs-5'>Answer : </span>Node. js is primarily used for non-blocking, event-driven servers, due to its single-thread nature. It is used for traditional web sites and back-end API services, but was designed with real-time, push-based architecture in mind.6t</p>
                 <h5 className='fw-bold'>mongodb : </h5>
                 <p>If SQL is your data document-centric and does not fit well with the relational database schema, then when you have to compromise on a large scale, when you are prototyping quickly, and for some other uses, NoSQL databases like MongodB are a good choice</p>
             </div>
             <div className='shadow-lg mt-5 p-2'>
-                <h3 className='ms-3'>3.  Differences between sql and nosql databases.</h3>
+                <h3 className='p-3'>3.  Differences between sql and nosql databases.</h3>
                 <p><span className='fw-bold fs-5'>Answer : </span></p>
                 <Table striped bordered hover variant="dark" className='text-center fs-5'>
                     <thead>
@@ -105,7 +105,7 @@ const Blogs = () => {
                 </Table>
             </div>
             <div className='shadow-lg mt-5 p-2'>
-                <h3 className='ms-3'>4. What is the purpose of jwt and how does it work</h3>
+                <h3 className='p-3'>4. What is the purpose of jwt and how does it work</h3>
                 <p><span className='fw-bold fs-5'>Answer : </span>JWT, or JSON Web Token, is an open value that is used to share security information between two parties - a client and a server. Each JWT contains an encoded JSON object, which contains a set of claims. JWT is signed using a cryptographic algorithm so that claims cannot be changed after the token has been issued.</p>
                 <h5>Its Works : </h5>
                 <p>JWTs differ from other web tokens in that they contain a set of claims. The claim is used to transmit information between the two parties. What these claims are depends on the use at hand. For example, a claimant may claim who issued the token, how long it was valid, or what permission was granted to the client.
