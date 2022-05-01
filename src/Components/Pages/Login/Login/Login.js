@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Helmet } from 'react-helmet-async';
 import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../../firebase.init';
 import Footer from '../../Shared/Footer/Footer';
@@ -47,6 +48,9 @@ const Login = () => {
 
     return (
         <div className='bg-white'>
+            <Helmet>
+                <title>Login-Warehouse</title>
+            </Helmet>
             <div className=' w-25 mx-auto mt-5 pt-5 p-3 '>
 
                 <h2 className='text-primary text-center mt-2'>Please login</h2>

@@ -2,6 +2,7 @@ import { updateProfile } from 'firebase/auth';
 import React, { useState } from 'react';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../../../../firebase.init';
 
@@ -36,7 +37,9 @@ const SignUp = () => {
 
     return (
         <div className='mt-5 pt-5  bg-light'>
-
+            <Helmet>
+                <title>SignUp-Warehouse</title>
+            </Helmet>
             <h2 className='text-center'>Please Register</h2>
             <div className='text-center'>
                 <form onSubmit={handleRegister}>

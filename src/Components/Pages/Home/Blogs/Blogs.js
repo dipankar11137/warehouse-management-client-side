@@ -1,9 +1,13 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
+import { Helmet } from 'react-helmet-async';
 
 const Blogs = () => {
     return (
         <div className='container mt-3  bg-white'>
+            <Helmet>
+                <title>Blogs-Warehouse</title>
+            </Helmet>
             <h1 className='text-center fw-bold'>THIS IS BLOGS</h1>
             <div className='shadow-lg p-1 text-center '>
                 <h3 className='text-start p-3'>1 . Difference between javascript and nodejs .</h3>
