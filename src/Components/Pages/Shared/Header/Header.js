@@ -2,8 +2,17 @@ import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import warehouse from '../../../../Images/warehouse.jpg'
 import { Link } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../../firebase.init';
+import { signOut } from 'firebase/auth';
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+    const handleSignOut = () => {
+        signOut(auth);
+
+    }
+
     return (
         <div className='fs-5 fw-bold '>
             <Navbar className='fixed-top mb-3' collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -23,10 +32,16 @@ const Header = () => {
                             </NavDropdown>
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to='/login'>Login</Nav.Link>
-                            <Nav.Link eventKey={2} href="#memes">
-                                Dank memes
-                            </Nav.Link>
+                            <Nav.Link as={Link} to='/'>Home</Nav.Link>
+                            {
+                                user ?
+                                    <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>Sign Out</button>
+                                    // <Nav.Link onClick={handleSignOut} >Sign Out</Nav.Link>
+                                    :
+                                    <Nav.Link as={Link} to='/login'>Login</Nav.Link>
+                            }
+
+
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

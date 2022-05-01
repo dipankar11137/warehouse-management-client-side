@@ -6,13 +6,13 @@ import auth from '../../../../firebase.init';
 import Footer from '../../Shared/Footer/Footer';
 
 const Login = () => {
-    // const emailRef = useRef('');
-    // const passwordRef = useRef('');
+    const emailRef = useRef('');
+    const passwordRef = useRef('');
     const navigator = useNavigate();
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+
     const location = useLocation();
     const from = location.state?.from?.pathname || '/';
+    let errorShow;
 
     const [
         signInWithEmailAndPassword,
@@ -21,13 +21,7 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
-    const handleEmailBlur = event => {
-        setEmail(event.target.value);
-    }
 
-    const handlePasswordBlur = event => {
-        setPassword(event.target.value);
-    }
 
     const navigateSignUp = () => {
         navigator('/signup');
@@ -36,9 +30,18 @@ const Login = () => {
     if (user) {
         navigator(from, { replace: true });
     }
+
     const handleSubmit = (event) => {
         event.preventDefault();
+        const email = emailRef.current.value;
+        const password = passwordRef.current.value;
         signInWithEmailAndPassword(email, password);
+
+    }
+
+    if (error) {
+
+        errorShow = <p className='text-danger'>Error: {error?.message}</p>
 
     }
 
@@ -51,18 +54,18 @@ const Login = () => {
                 <div className='container border p-3'>
                     <Form onSubmit={handleSubmit}>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Control onBlur={handleEmailBlur} type="email" placeholder="Enter email" required />
+                            <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Control onBlur={handlePasswordBlur} type="password" placeholder="Password" required />
+                            <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                         </Form.Group>
 
                         <Button variant="primary w-50 d-block mx-auto mb-2" type="submit">
                             Login
                         </Button>
                     </Form>
-
+                    {errorShow}
                     <p>New to warehouse ?<span className='text-primary ms-2' type="submit" onClick={navigateSignUp}> Please Register</span></p>
                     <p>Forget Password? <span className='text-primary' type="submit" >Reset Password</span></p>
                 </div>
