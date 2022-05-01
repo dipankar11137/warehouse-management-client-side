@@ -1,10 +1,13 @@
+import { sendPasswordResetEmail } from 'firebase/auth';
 import React, { useRef, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Helmet } from 'react-helmet-async';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../../../firebase.init';
 import Footer from '../../Shared/Footer/Footer';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -26,6 +29,18 @@ const Login = () => {
 
     const navigateSignUp = () => {
         navigator('/signup');
+    }
+
+    const resetPassword = () => {
+        const email = emailRef.current.value;
+        if (email) {
+            sendPasswordResetEmail(email);
+            toast('Send A Message Your Email');
+        }
+        else {
+            toast('Please Enter Your Email Email Address');
+
+        }
     }
 
     if (user) {
@@ -71,13 +86,14 @@ const Login = () => {
                     </Form>
                     {errorShow}
                     <p>New to warehouse ?<span className='text-primary ms-2' type="submit" onClick={navigateSignUp}> Please Register</span></p>
-                    <p>Forget Password? <span className='text-primary' type="submit" >Reset Password</span></p>
+                    <p>Forget Password? <span className='text-primary' type="submit" onClick={resetPassword}>Reset Password</span></p>
                 </div>
 
             </div>
             <div className=' fixed-bottom'>
                 <Footer></Footer>
             </div>
+            <ToastContainer />
         </div>
 
     );
