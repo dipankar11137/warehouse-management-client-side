@@ -8,6 +8,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../../../firebase.init';
 import Footer from '../../Shared/Footer/Footer';
 import 'react-toastify/dist/ReactToastify.css';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -42,6 +43,7 @@ const Login = () => {
 
         }
     }
+
 
     if (user) {
         navigator(from, { replace: true });
@@ -88,7 +90,7 @@ const Login = () => {
                     <p>New to warehouse ?<span className='text-primary ms-2' type="submit" onClick={navigateSignUp}> Please Register</span></p>
                     <p>Forget Password? <span className='text-primary' type="submit" onClick={resetPassword}>Reset Password</span></p>
                 </div>
-
+                <SocialLogin></SocialLogin>
             </div>
             <div className=' fixed-bottom'>
                 <Footer></Footer>

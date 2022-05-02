@@ -6,7 +6,8 @@
         "quantity": "4",
         "supplierName": "Dipu",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+        "img": "https://i.ibb.co/C6SwnVc/ele-2.jpg",
+        "date": "4-5-22"
     },
     {
         "_id": 2,
@@ -15,7 +16,8 @@
         "quantity": "3",
         "supplierName": "Messi",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+        "img": "https://i.ibb.co/m58cx3Y/ele-3.jpg",
+        "date": "4-5-22"
     },
     {
         "_id": 3,
@@ -24,7 +26,8 @@
         "quantity": "1",
         "supplierName": "Ronaldo",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+        "img": "https://i.ibb.co/xGjWRjj/ele-1.jpg",
+        "date": "4-5-22"
     },
     {
         "_id": 4,
@@ -33,7 +36,8 @@
         "quantity": "2",
         "supplierName": "Naymer",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+        "img": "https://i.ibb.co/3dpzWP6/ele-4.jpg",
+        "date": "4-5-22"
     },
     {
         "_id": 5,
@@ -42,7 +46,8 @@
         "quantity": "6",
         "supplierName": "Ramus",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+        "img": "https://i.ibb.co/C6SwnVc/ele-2.jpg",
+        "date": "4-5-22"
     },
     {
         "_id": 6,
@@ -51,7 +56,8 @@
         "quantity": "22",
         "supplierName": "Play",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+        "img": "https://i.ibb.co/3dpzWP6/ele-4.jpg",
+        "date": "4-5-22"
     },
     {
         "_id": 7,
@@ -60,6 +66,7 @@
         "quantity": "7",
         "supplierName": "Romero",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+        "img": "https://i.ibb.co/xGjWRjj/ele-1.jpg",
+        "date": "4-5-22"
     }
 ]

@@ -5,6 +5,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../../../../firebase.init';
+import SocialLogin from '../../SocialLogin/SocialLogin';
 
 const SignUp = () => {
     const [agree, setAgree] = useState(false);
@@ -60,7 +61,9 @@ const SignUp = () => {
                         value="Sign Up" />
                 </form>
                 <p>Your Already Have An Account <span className='text-primary mt-2' type="submit" onClick={navigateLogin} >Please Login</span></p>
-
+                <div className='w-25 mx-auto pb-5'>
+                    <SocialLogin></SocialLogin>
+                </div>
             </div>
 
         </div>
