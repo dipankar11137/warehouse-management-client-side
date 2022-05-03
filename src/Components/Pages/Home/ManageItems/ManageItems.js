@@ -22,21 +22,18 @@ const ManageItems = () => {
     }
 
     return (
-        <div>
+        <div style={{ backgroundColor: 'lightblue' }}>
             <div className=' container mt-5 pt-5 text-white text-center pb-5'>
-                <h1>Manage Item </h1>
-                <div className='row'>
+                <h1 className='fw-bold bg-dark w-25 mx-auto p-2 rounded-3 '>MANAGE ITEM </h1>
+                <div className='row p-3'>
                     {
-                        products.map(product => <div className='container col-12 col-lg-4 mt-3' key={product._id}>
+                        products.map(product => <div className='container px-3 col-12 col-lg-4 mt-3' key={product._id}>
 
-                            <div className=' '>
-                                <div className='border   mb-2'>
-                                    <img className='w-100 mb-2' src={product.img} alt="" />
+                            <div className='border-danger border rounded mb-2 shadow-lg'>
+                                <img className='w-100 ' src={product.img} alt="" />
 
-                                    <button onClick={() => handleDelete(product._id)} className='fs-4 fw-bold remove-button btn btn-danger w-100' >Remove {product.name}</button>
-                                </div>
+                                <button onClick={() => handleDelete(product._id)} className='fs-4 fw-bold remove-button btn btn-danger w-100' >Remove {product.name}</button>
                             </div>
-
 
                         </div>)
                     }
