@@ -9,6 +9,7 @@ import './Home.css'
 const Home = () => {
     return (
         <div >
+
             <Helmet>
                 <title>Home - Warehouse</title>
             </Helmet>

@@ -10,10 +10,15 @@
     background: linear-gradient(#1c0603, #03071d, #190219);
 }
 
+.remove-button {
+    background-color: rgb(255, 0, 0);
+}
+
 .btn-hover-style:hover {
     background-color: #456906;
     color: aliceblue;
 }
+
 
 @media only screen and (max-width: 800px) {
     .header-title-style {
