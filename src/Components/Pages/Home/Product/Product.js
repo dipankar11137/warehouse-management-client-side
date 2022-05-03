@@ -2,12 +2,12 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Product = ({ product }) => {
-    const { name, price, quantity, supplierName, description, img, date } = product;
+    const { _id, name, price, quantity, supplierName, description, img, date } = product;
 
     const navigate = useNavigate();
 
-    const handleUpdate = () => {
-        navigate('/updateproducts');
+    const handleUpdate = _id => {
+        navigate(`/updateproducts/${_id}`);
     }
 
     return (
@@ -23,7 +23,7 @@ const Product = ({ product }) => {
                     <h6>Supplier Name : {supplierName}</h6>
                     <p>Input Date : {date}</p>
                 </div>
-                <button onClick={handleUpdate} className='w-100 rounded-3 p-1 fw-bold fs-5 btn btn-warning btn-hover-style'>Update Hare</button>
+                <button onClick={() => handleUpdate(_id)} className='w-100 rounded-3 p-1 fw-bold fs-5 btn btn-warning btn-hover-style'>Update Hare</button>
             </div>
 
         </div>
