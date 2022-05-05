@@ -4,9 +4,17 @@ import { useForm } from "react-hook-form";
 const AddItem = () => {
     const { register, handleSubmit } = useForm();
 
+    // Get date
+    const today = new Date();
+    const day = today.getDate();
+    const month = today.getMonth();
+    const year = today.getFullYear();
+    const date = day + "-" + month + "-" + year;
+
+
     const onSubmit = data => {
-        console.log(data);
-        const url = 'http://localhost:5000/products'
+        // console.log(data);
+        const url = 'https://enigmatic-fjord-48506.herokuapp.com/products'
         console.log(url)
         fetch(url, {
             method: 'POST',
@@ -33,7 +41,7 @@ const AddItem = () => {
                     <input className='mb-2 p-2' placeholder='Supplier Name' type="text" {...register("supplierName")} required />
                     <textarea className='mb-2 p-2' placeholder='Description' {...register("description")} required />
                     <input className='mb-2 p-2' placeholder='Img' type="text" {...register("img")} required />
-                    <input className='mb-2 p-2' placeholder='Date' type="text" {...register("date")} required />
+                    <input className='mb-2 p-2' placeholder='Date' type="text" value={date} {...register("date")} required />
                     <input className=' mb-5 btn btn-primary' type="submit" value="Add new Item" />
                 </form>
             </div>

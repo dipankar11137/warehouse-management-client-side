@@ -1,14 +1,13 @@
-[debug] [2022-05-01T14:22:51.670Z] ----------------------------------------------------------------------
-[debug] [2022-05-01T14:22:51.673Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tmc\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2022-05-01T14:22:51.673Z] CLI Version:   10.6.0
-[debug] [2022-05-01T14:22:51.673Z] Platform:      win32
-[debug] [2022-05-01T14:22:51.674Z] Node Version:  v16.13.1
-[debug] [2022-05-01T14:22:51.675Z] Time:          Sun May 01 2022 20:22:51 GMT+0600 (Bangladesh Standard Time)
-[debug] [2022-05-01T14:22:51.675Z] ----------------------------------------------------------------------
+[debug] [2022-05-05T19:10:10.727Z] ----------------------------------------------------------------------
+[debug] [2022-05-05T19:10:10.729Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tmc\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-05-05T19:10:10.729Z] CLI Version:   10.8.0
+[debug] [2022-05-05T19:10:10.730Z] Platform:      win32
+[debug] [2022-05-05T19:10:10.730Z] Node Version:  v16.13.1
+[debug] [2022-05-05T19:10:10.731Z] Time:          Fri May 06 2022 01:10:10 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-05-05T19:10:10.731Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-05-01T14:22:51.684Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2022-05-01T14:22:51.713Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-05-01T14:22:51.713Z] > authorizing via signed-in user (dipankar15-11137@diu.edu.bd)
+[debug] [2022-05-05T19:10:10.739Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-05T19:10:10.739Z] > authorizing via signed-in user (dipankar15-11137@diu.edu.bd)
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -20,5 +19,102 @@ You're about to initialize a Firebase project in this directory:
 
   I:\Programming Hero\Assignment\Ass-11(warehouse)\warehouse-managment
 
-[debug] [2022-05-01T14:22:52.838Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
-[debug] [2022-05-01T14:22:52.839Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-05-05T19:10:27.517Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-05-05T19:10:28.620Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-05-05T19:10:28.620Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2022-05-05T19:12:38.713Z] ----------------------------------------------------------------------
+[debug] [2022-05-05T19:12:38.715Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tmc\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-05-05T19:12:38.715Z] CLI Version:   10.8.0
+[debug] [2022-05-05T19:12:38.716Z] Platform:      win32
+[debug] [2022-05-05T19:12:38.716Z] Node Version:  v16.13.1
+[debug] [2022-05-05T19:12:38.717Z] Time:          Fri May 06 2022 01:12:38 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-05-05T19:12:38.717Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-05T19:12:38.725Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-05T19:12:38.725Z] > authorizing via signed-in user (dipankar15-11137@diu.edu.bd)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  I:\Programming Hero\Assignment\Ass-11(warehouse)\warehouse-managment
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2022-05-05T19:13:43.292Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-05-05T19:13:43.293Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-05T19:13:43.660Z] <<< HTTP RESPONSE 200 {"date":"Thu, 05 May 2022 19:13:44 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-05T19:13:43.682Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"warehouse-project-295fd","name":"warehouse-project-295fd"}
+[debug] [2022-05-05T19:13:45.231Z] <<< HTTP RESPONSE 409 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Thu, 05 May 2022 19:13:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1253","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-05T19:13:45.232Z] <<< HTTP RESPONSE BODY {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2022-05-05T19:13:45.509Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at module.exports (C:\Users\tmc\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:47:12)
+    at Request._callback (C:\Users\tmc\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\tmc\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:390:28)
+    at Request.emit (node:domain:475:12)
+    at Request.<anonymous> (C:\Users\tmc\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (node:events:390:28)
+    at Request.emit (node:domain:475:12)
+    at IncomingMessage.<anonymous> (C:\Users\tmc\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (node:events:509:28)
+    at IncomingMessage.emit (node:events:402:35)
+    at IncomingMessage.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1343:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID warehouse-project-295fd. Please try again with a unique project ID.
+[debug] [2022-05-05T19:14:00.172Z] ----------------------------------------------------------------------
+[debug] [2022-05-05T19:14:00.174Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tmc\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-05-05T19:14:00.175Z] CLI Version:   10.8.0
+[debug] [2022-05-05T19:14:00.175Z] Platform:      win32
+[debug] [2022-05-05T19:14:00.175Z] Node Version:  v16.13.1
+[debug] [2022-05-05T19:14:00.176Z] Time:          Fri May 06 2022 01:14:00 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-05-05T19:14:00.176Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-05T19:14:00.184Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-05T19:14:00.184Z] > authorizing via signed-in user (dipankar15-11137@diu.edu.bd)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  I:\Programming Hero\Assignment\Ass-11(warehouse)\warehouse-managment
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-05-05T19:14:14.984Z] > refreshing access token with scopes: []
+[debug] [2022-05-05T19:14:14.986Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-05T19:14:15.259Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Thu, 05 May 2022 19:14:15 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-05T19:14:15.285Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-05-05T19:14:16.147Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-05-05T19:14:16.147Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
