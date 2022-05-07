@@ -9,6 +9,9 @@ const Product = ({ product }) => {
     const handleUpdate = _id => {
         navigate(`/updateproducts/${_id}`);
     }
+    const handlePutOut = _id => {
+        navigate(`/putoutproduct/${_id}`);
+    }
 
     return (
         <div className='col-12 col-lg-4 text-center mt-3'>
@@ -23,7 +26,10 @@ const Product = ({ product }) => {
                     <h6>Supplier Name : {supplierName}</h6>
                     <p>Input Date : {date}</p>
                 </div>
-                <button onClick={() => handleUpdate(_id)} className='w-100 rounded-3 p-1 fw-bold fs-5 btn btn-warning btn-hover-style'>Update Hare</button>
+
+                <button onClick={() => handleUpdate(_id)} className='w-50 rounded-3 p-1 fw-bold fs-5 btn btn-warning btn-hover-style'>Put In</button>
+                <button onClick={() => handlePutOut(_id)} className='w-50 rounded-3 p-1 fw-bold fs-5 btn btn-danger btn-hover-style'>Put Out</button>
+
             </div>
 
         </div>

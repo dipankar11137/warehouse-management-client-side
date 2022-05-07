@@ -14,7 +14,7 @@ const AddItem = () => {
 
     const onSubmit = data => {
         // console.log(data);
-        const url = 'https://enigmatic-fjord-48506.herokuapp.com/products'
+        const url = 'http://localhost:5000/products'
         console.log(url)
         fetch(url, {
             method: 'POST',

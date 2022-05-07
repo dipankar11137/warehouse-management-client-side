@@ -88,8 +88,8 @@ const Login = () => {
                         </Button>
                     </Form>
                     {errorShow}
-                    <p>New to warehouse ?<span className='text-primary ms-2' type="submit" onClick={navigateSignUp}> Please Register</span></p>
-                    <p>Forget Password? <span className='text-primary' type="submit" onClick={resetPassword}>Reset Password</span></p>
+                    <p>New to warehouse ?<span className='text-warning ms-2 ' type="submit" onClick={navigateSignUp}> Please Register</span></p>
+                    <p>Forget Password? <span className='text-warning' type="submit" onClick={resetPassword}>Reset Password</span></p>
                 </div>
                 <SocialLogin></SocialLogin>
             </div>

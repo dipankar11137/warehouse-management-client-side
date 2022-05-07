@@ -5,6 +5,7 @@ import AddItem from './Components/Pages/Home/AddItem/AddItem';
 import Blogs from './Components/Pages/Home/Blogs/Blogs';
 import Home from './Components/Pages/Home/Home/Home';
 import ManageItems from './Components/Pages/Home/ManageItems/ManageItems';
+import PutOutProducts from './Components/Pages/Home/PutOutProducts/PutOutProducts';
 import ShowAllProducts from './Components/Pages/Home/ShowAllProducts/ShowAllProducts';
 import UpdateProducts from './Components/Pages/Home/UpdateProducts/UpdateProducts';
 import Login from './Components/Pages/Login/Login/Login';
@@ -27,6 +28,11 @@ function App() {
         <Route path='/updateproducts/:updateproductsId' element={
           <RequireAuth>
             <UpdateProducts></UpdateProducts>
+          </RequireAuth>
+        }></Route>
+        <Route path='/putoutproduct/:PutOutProductsId' element={
+          <RequireAuth>
+            <PutOutProducts></PutOutProducts>
           </RequireAuth>
         }></Route>
         <Route path='/manageitem' element={
