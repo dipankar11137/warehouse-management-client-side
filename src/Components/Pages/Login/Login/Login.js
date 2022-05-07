@@ -1,7 +1,7 @@
 import { sendPasswordResetEmail } from 'firebase/auth';
 import React, { useRef, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Helmet } from 'react-helmet-async';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
@@ -26,7 +26,7 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
-
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
 
     const navigateSignUp = () => {
