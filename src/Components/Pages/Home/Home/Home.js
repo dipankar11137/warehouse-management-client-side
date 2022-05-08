@@ -16,7 +16,7 @@ const Home = () => {
             <div className="container mt-5">
                 <div className="row">
                     <div className="col-lg-4 col-12 text-center   ">
-                        <h1 className='fw-bold header-title-style '>WELCOME TO MY WAREHOUSE</h1>
+                        <h2 className='fw-bold header-title-style '>WELCOME TO MY WAREHOUSE</h2>
                     </div>
                     <div className="col-lg-8 col-12 rounded shadow">
                         <Banner></Banner>
