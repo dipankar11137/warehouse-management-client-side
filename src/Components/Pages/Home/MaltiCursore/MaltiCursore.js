@@ -31,6 +31,7 @@ const MaltiCursore = () => {
     };
     return (
         <div className='mt-5 p-5 text-white'>
+            <h1 className='text-center mb-3 fw-bold'>Show Others Products</h1>
             <div className='h-75 carsore-style'>
                 <Carousel responsive={responsive}>
                     <div>

@@ -12,23 +12,38 @@ const Product = ({ product }) => {
     const handleUpdate = _id => {
         navigate(`/updateproducts/${_id}`);
     }
-    const handlePutOut = _id => {
-        // navigate(`/putoutproduct/${_id}`);
-        console.log(_id);
-        const proceed = window.confirm('Are you Sure?');
-        if (proceed) {
-            const url = `http://localhost:5000/updateproducts/${_id}`
-            fetch(url, {
-                method: 'DELETE'
-            })
-                .then(res => res.json())
-                .then(data => {
-                    console.log(data);
-                    const remaining = products.filter(product => product._id !== _id)
-                    setProducts(remaining);
+    const handlePutOut = (e, _id) => {
+        const quantity = e.target.quantity.value - 1;
+        const updateQuantity = { quantity };
+        const url = `https://enigmatic-fjord-48506.herokuapp.com/updateproducts/${_id}`;
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(updateQuantity)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+            });
 
-                })
-        }
+        // navigate(`/putoutproduct/${_id}`);
+        // console.log(_id);
+        // const proceed = window.confirm('Are you Sure?');
+        // if (proceed) {
+        //     const url = `https://enigmatic-fjord-48506.herokuapp.com/updateproducts/${_id}`
+        //     fetch(url, {
+        //         method: 'DELETE'
+        //     })
+        //         .then(res => res.json())
+        //         .then(data => {
+        //             console.log(data);
+        //             const remaining = products.filter(product => product._id !== _id)
+        //             setProducts(remaining);
+
+        //         })
+        // }
     }
 
     return (
@@ -46,7 +61,7 @@ const Product = ({ product }) => {
                 </div>
 
                 <button onClick={() => handleUpdate(_id)} className='w-50 rounded-3 p-1 fw-bold fs-5 btn btn-warning btn-hover-style'>Put In</button>
-                <button onClick={() => handlePutOut(_id)} className='w-50 rounded-3 p-1 fw-bold fs-5 btn btn-danger btn-hover-style'>Put Out</button>
+                <button onClick={() => handlePutOut(quantity, _id)} className='w-50 rounded-3 p-1 fw-bold fs-5 btn btn-danger btn-hover-style'>Put Out</button>
 
             </div>
 

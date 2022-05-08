@@ -36,6 +36,12 @@ const Header = () => {
                                     :
                                     <p></p>
                             }
+                            {
+                                user ?
+                                    <Nav.Link as={Link} to='/myproducts'>My Products</Nav.Link>
+                                    :
+                                    <p></p>
+                            }
 
                         </Nav>
                         <Nav>

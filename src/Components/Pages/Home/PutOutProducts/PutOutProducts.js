@@ -8,7 +8,7 @@ const PutOutProducts = () => {
     const { register, handleSubmit } = useForm();
 
     useEffect(() => {
-        const uri = `http://localhost:5000/updateproducts/${PutOutProductsId}`;
+        const uri = `https://enigmatic-fjord-48506.herokuapp.com/updateproducts/${PutOutProductsId}`;
 
         fetch(uri)
             .then(res => res.json())

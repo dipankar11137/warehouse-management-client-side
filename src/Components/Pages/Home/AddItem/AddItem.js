@@ -1,9 +1,13 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
+import auth from '../../../../firebase.init';
 
 const AddItem = () => {
+    const [user] = useAuthState(auth);
     const { register, handleSubmit } = useForm();
 
+    const email = user.email;
     // Get date
     const today = new Date();
     const day = today.getDate();
@@ -14,7 +18,7 @@ const AddItem = () => {
 
     const onSubmit = data => {
         // console.log(data);
-        const url = 'http://localhost:5000/products'
+        const url = 'https://enigmatic-fjord-48506.herokuapp.com/products'
         console.log(url)
         fetch(url, {
             method: 'POST',
@@ -36,6 +40,7 @@ const AddItem = () => {
             <div >
                 <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
                     <input className='mb-2 p-2' placeholder='Name' {...register("name", { required: true, maxLength: 30 })} />
+                    <input className='mb-2 p-2' value={email} placeholder='Email' {...register("email", { required: true, maxLength: 30 })} />
                     <input className='mb-2 p-2' placeholder='Price' type="number" {...register("price")} required />
                     <input className='mb-2 p-2' placeholder='Quantity' type="number" {...register("quantity")} required />
                     <input className='mb-2 p-2' placeholder='Supplier Name' type="text" {...register("supplierName")} required />

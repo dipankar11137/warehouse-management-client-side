@@ -11,7 +11,7 @@ const UpdateProducts = () => {
 
 
     useEffect(() => {
-        const uri = `http://localhost:5000/updateproducts/${updateproductsId}`;
+        const uri = `https://enigmatic-fjord-48506.herokuapp.com/updateproducts/${updateproductsId}`;
 
         fetch(uri)
             .then(res => res.json())
@@ -21,7 +21,7 @@ const UpdateProducts = () => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/updateproducts/${updateproductsId}`;
+        const url = `https://enigmatic-fjord-48506.herokuapp.com/updateproducts/${updateproductsId}`;
         fetch(url, {
             method: 'POST',
             headers: {
