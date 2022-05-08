@@ -10,11 +10,11 @@
 ### Stack overFlow Link : https://stackoverflow.com/questions/72161386/how-can-decrease-quantity-to-react-from-mongodb
 
 
-Markup : <details>
+ <details>
            <summary>Point 1</summary>
            <p>first of sll i create a react file and server file the connected this file react to server.</p>
          </details>
-Markup : <details>
+ <details>
            <summary>Point 2</summary>
            <p>I create firebase and install this client side and connected to this .. then add log in and sign up in the client side..then i design home page like as navbar ,banner,products,footer etc. </p>
          </details>
