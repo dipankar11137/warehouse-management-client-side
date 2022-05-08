@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router-dom';
+import useProducts from '../../../Hooks/useProducts';
 
 const UpdateProducts = () => {
+    const [products, setProducts] = useProducts();
     const { updateproductsId } = useParams();
     const [product, setProduct] = useState({});
     const { register, handleSubmit } = useForm();
@@ -31,6 +33,8 @@ const UpdateProducts = () => {
             .then(res => res.json())
             .then(result => {
                 console.log(result);
+                setProducts(result);
+                navigator('/');
             })
     }
 

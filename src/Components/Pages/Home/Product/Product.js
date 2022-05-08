@@ -1,8 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import useProducts from '../../../Hooks/useProducts';
 
 const Product = ({ product }) => {
     const { _id, name, price, quantity, supplierName, description, img, date } = product;
+
+    const [products, setProducts] = useProducts();
 
     const navigate = useNavigate();
 
@@ -10,7 +13,22 @@ const Product = ({ product }) => {
         navigate(`/updateproducts/${_id}`);
     }
     const handlePutOut = _id => {
-        navigate(`/putoutproduct/${_id}`);
+        // navigate(`/putoutproduct/${_id}`);
+        console.log(_id);
+        const proceed = window.confirm('Are you Sure?');
+        if (proceed) {
+            const url = `http://localhost:5000/updateproducts/${_id}`
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    const remaining = products.filter(product => product._id !== _id)
+                    setProducts(remaining);
+
+                })
+        }
     }
 
     return (
