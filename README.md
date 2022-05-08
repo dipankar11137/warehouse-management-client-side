@@ -5,7 +5,7 @@
 
 #### Live website link : https://warehouse-project-295fd.web.app
 
-##### Server link : 
+##### Server link : https://enigmatic-fjord-48506.herokuapp.com
 
 #### Stack overFlow Link : https://stackoverflow.com/questions/72161386/how-can-decrease-quantity-to-react-from-mongodb
 
@@ -28,5 +28,5 @@
          </details>
 <details>
            <summary>Point 5</summary>
-           <p>Create a jwt and and connected to local host </p>
+           <p>Create a jwt and and connected to local host .deploy heroku .and set up clint side then deploy firebase</p>
          </details>

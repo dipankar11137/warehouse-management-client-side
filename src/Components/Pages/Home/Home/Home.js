@@ -18,7 +18,7 @@ const Home = () => {
                     <div className="col-lg-4 col-12 text-center   ">
                         <h2 className='fw-bold header-title-style '>WELCOME TO MY WAREHOUSE</h2>
                     </div>
-                    <div className="col-lg-8 col-12 rounded shadow">
+                    <div className=" col-lg-8 col-12 rounded shadow">
                         <Banner></Banner>
                     </div>
                 </div>
